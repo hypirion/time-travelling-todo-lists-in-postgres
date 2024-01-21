@@ -1,0 +1,3 @@
+DROP FUNCTION copy_updates_into_history;
+DROP FUNCTION copy_inserts_and_deletes_into_history;
+DROP EXTENSION btree_gist;

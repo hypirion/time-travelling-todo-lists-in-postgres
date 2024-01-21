@@ -31,11 +31,15 @@ $ PGPASSWORD=mySecretPassword psql -h localhost -p 10840 -U postgres postgres
 
 ## Why System-Versioned/Temporal Tables
 
-TODO
+I made the blog post ["Implementing System-Versioned Tables in
+Postgres"](https://hypirion.com/musings/implementing-system-versioned-tables-in-postgres).
+It also goes further into the details on how the.
 
 ## How to use it yourself
 
-I recommend reading TODO to grok how the triggers work under the covers.
+I recommend reading the blog post to grok how the triggers work under the
+covers. Here I'll explain how to use it and the things you need to be aware of
+if you want to use this technique.
 
 First off, make a migration for the history triggers just like in
 `migrations/001_history_triggers.up.sql`. Then, take the tables you want
